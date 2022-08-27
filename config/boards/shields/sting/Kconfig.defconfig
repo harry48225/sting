@@ -1,0 +1,6 @@
+if SHIELD_STING
+
+config ZMK_KEYBOARD_NAME
+  default "sting"
+
+endif
