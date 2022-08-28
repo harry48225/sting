@@ -11,8 +11,6 @@
         resolution = <4>;
     };
 
-    &left_encoder { status = "okay"; };
-
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";

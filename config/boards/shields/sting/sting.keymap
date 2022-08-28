@@ -18,6 +18,7 @@
     keymap {
         compatible = "zmk,keymap";
 
+        &left_encoder { status = "okay"; };
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
         default_layer {
