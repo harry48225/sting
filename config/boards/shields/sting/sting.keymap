@@ -14,8 +14,6 @@
 #define RSE 2
 #define FNC 3
 
-&left_encoder { status = "okay"; };
-
 / {
     keymap {
         compatible = "zmk,keymap";
