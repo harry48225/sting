@@ -37,10 +37,10 @@
         default_layer {
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-                &kp ESC     &kp Q        &kp W       &kp F        &kp P       &kp B        &kp J       &kp L       &kp U       &kp Y     &kp SQT       &kp BSPC  
-                &kp TAB     &kp A        &kp R       &kp S        &kp T       &kp G        &kp M       &kp N       &kp E       &kp I     &kp O         &kp SEMI
-                &kp LSHFT   &mt LC(Z) Z  &kp X       &mt LC(C) C  &kp D       &mt LC(V) V  &kp K       &kp H       &kp COMMA   &kp DOT   &kp  FSLH     &kp ENTER
-                &kp LCTRL   &kp LALT     &kp LGUI    &mo FNC      &mo LWR     &kp SPACE    &mo RSE     &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT     &td0
+                &kp ESC       &kp Q         &mt LC(W) W  &kp F         &kp P        &kp B         &kp J        &mt LC(L) L  &kp U        &kp Y      &kp SQT        &kp BSPC  
+                &kp TAB       &mt LC(A) A   &kp R        &mt LC(S) S   &kp T        &kp G         &kp M        &kp N        &kp E        &kp I      &kp O          &kp SEMI
+                &kp LSHFT     &mt LC(Z) Z   &mt LC(X) X  &mt LC(C) C   &kp D        &mt LC(V) V   &kp K        &kp H        &kp COMMA    &kp DOT    &kp FSLH       &kp ENTER
+                &kp LCTRL     &kp LALT      &kp LGUI     &mo FNC       &mo LWR      &kp SPACE     &mo RSE      &kp LEFT     &kp DOWN     &kp UP     &kp RIGHT      &td0
             >;
         };
 
