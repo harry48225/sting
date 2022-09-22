@@ -15,6 +15,11 @@
 #define RSE 3
 #define FNC 4
 
+&mt {
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
+};
+
 / {
     behaviors {
         td0: tap_dance_0 {
@@ -24,6 +29,8 @@
             tapping-term-ms = <300>;
             bindings = <&kp C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREV>;
         };
+
+        http: 
     };
 
     keymap {
@@ -34,7 +41,7 @@
             bindings = <
                 &kp ESC     &kp Q       &kp W       &kp F       &kp P       &kp B       &kp J       &kp L       &kp U       &kp Y     &kp SQT       &kp BSPC  
                 &kp TAB     &kp A       &kp R       &kp S       &kp T       &kp G       &kp M       &kp N       &kp E       &kp I     &kp O         &kp SEMI
-                &kp LSHFT   &kp Z       &kp X       &kp C       &kp D       &kp V       &kp K       &kp H       &kp COMMA   &kp DOT   &kp  FSLH     &kp ENTER
+                &kp LSHFT   &mt LC(Z) Z       &kp X       &kp LC(C) C       &kp D       &kp LC(V) V       &kp K       &kp H       &kp COMMA   &kp DOT   &kp  FSLH     &kp ENTER
                 &kp LCTRL   &kp LALT    &kp LGUI    &mo FNC     &mo LWR     &kp SPACE   &mo RSE     &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT     &td0
             >;
         };
