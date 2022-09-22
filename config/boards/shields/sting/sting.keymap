@@ -37,8 +37,8 @@
         default_layer {
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-                &kp ESC       &kp Q         &mt LC(W) W  &kp F         &kp P        &kp B         &kp J        &mt LC(L) L  &kp U        &kp Y      &kp SQT        &kp BSPC  
-                &kp TAB       &mt LC(A) A   &kp R        &mt LC(S) S   &kp T        &kp G         &kp M        &kp N        &kp E        &kp I      &kp O          &kp SEMI
+                &kp ESC       &kp Q         &mt LC(W) W  &mt LC(F) F   &kp P        &kp B         &kp J        &mt LC(L) L  &kp U        &kp Y      &kp SQT        &kp BSPC  
+                &kp TAB       &mt LC(A) A   &mt LC(R) R  &mt LC(S) S   &mt LC(T) T  &kp G         &kp M        &mt LC(N) N  &kp E        &kp I      &kp O          &kp SEMI
                 &kp LSHFT     &mt LC(Z) Z   &mt LC(X) X  &mt LC(C) C   &kp D        &mt LC(V) V   &kp K        &kp H        &kp COMMA    &kp DOT    &kp FSLH       &kp ENTER
                 &kp LCTRL     &kp LALT      &kp LGUI     &mo FNC       &mo LWR      &kp SPACE     &mo RSE      &kp LEFT     &kp DOWN     &kp UP     &kp RIGHT      &td0
             >;
@@ -56,19 +56,19 @@
         lower_layer {
             sensor-bindings = <&inc_dec_kp PLUS MINUS>;
             bindings = <
-                &kp TILDE   &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT   &kp CARET   &kp AMPS    &kp STAR    &kp LPAR    &kp RPAR        &kp DEL
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT       &kp AT
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp LBRC    &kp RBRC    &kp C_VOL_UP    &trans
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp QMARK   &trans      &kp C_VOL_DN    &trans                    
+                &kp TILDE   &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT   &kp CARET   &kp AMPS    &kp STAR    &kp LPAR    &kp RPAR      &kp DEL
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT     &kp AT
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp LBRC    &kp RBRC    &trans        &trans
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp QMARK   &trans      &trans        &trans                    
             >;
         };
 
         raise_layer {
             bindings = <
-                &kp GRAVE    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5       &kp N6       &kp N7       &kp N8       &kp N9       &kp N0           &kp BSPC
-                &trans       &kp UNDER    &kp KP_MINUS &kp KP_EQUAL &kp KP_PLUS  &trans       &trans       &trans       &kp MINUS    &kp EQUAL    &trans           &kp BSLH
-                &trans       &kp PIPE2    &kp AMPS     &trans       &trans       &trans       &trans       &trans       &kp LBKT     &kp RBKT     &kp C_VOL_UP     &trans
-                &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &kp C_VOL_DN     &trans                    
+                &kp GRAVE    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5       &kp N6       &kp N7       &kp N8       &kp N9       &kp N0     &kp BSPC
+                &trans       &kp UNDER    &kp KP_MINUS &kp KP_EQUAL &kp KP_PLUS  &trans       &trans       &trans       &kp MINUS    &kp EQUAL    &trans     &kp BSLH
+                &trans       &kp PIPE2    &kp AMPS     &trans       &trans       &trans       &trans       &trans       &kp LBKT     &kp RBKT     &trans     &trans
+                &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans     &trans                    
             >;            
         };
 
