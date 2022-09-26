@@ -33,6 +33,9 @@
             bindings
                 = <&macro_tap &kp KP_NUMLOCK>
                 , <&macro_tap &kp KP_NUMLOCK>
+                , <&macro_pause_for_release>
+                , <&macro_tap &kp KP_NUMLOCK>
+                , <&macro_tap &kp KP_NUMLOCK>
                 ;
         };
     };
@@ -82,7 +85,7 @@
                 &to DEF     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans        &trans
                 &trans      &scroll     &mkp RCLK   &mkp MCLK   &mkp LCLK   &trans      &trans      &trans      &trans      &trans      &trans        &trans
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans        &trans
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans        &trans                    
+                &trans      &trans      &trans      &trans      &none      &trans      &trans      &trans      &trans      &trans      &trans        &trans                    
             >;
         };
 
