@@ -23,6 +23,20 @@
 };
 
 / {
+    macros {
+        scroll: scroll {
+            label = "ZM_scroll";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <1>;
+            tap-ms = <4>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp KP_NUMLOCK>
+                , <&macro_tap &kp KP_NUMLOCK>
+                ;
+        };
+    };
+
     behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
@@ -64,10 +78,9 @@
         };
 
         mouse_layer {
-            sensor-bindings = <&inc_dec_kp PLUS MINUS>;
             bindings = <
                 &to DEF     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans        &trans
-                &trans      &trans      &mkp RCLK   &mkp MCLK   &mkp LCLK   &trans      &trans      &trans      &trans      &trans      &trans        &trans
+                &trans      &scroll     &mkp RCLK   &mkp MCLK   &mkp LCLK   &trans      &trans      &trans      &trans      &trans      &trans        &trans
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans        &trans
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans        &trans                    
             >;
