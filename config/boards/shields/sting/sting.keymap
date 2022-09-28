@@ -61,7 +61,7 @@
         default_layer {
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-                &kp ESC       &kp Q         &mt LC(W) W  &mt LC(F) F   &kp P            &kp B         &kp J        &mt LC(L) L  &kp U        &kp Y      &kp SQT        &kp BSPC  
+                &kp ESC       &kp Q         &mt LC(W) W  &mt LC(F) F   &kp P            &kp B         &kp J        &mt LC(L) L  &kp U        &kp Y      &kp SQT        &mt LC(BSPC) BSPC  
                 &kp TAB       &mt LC(A) A   &mt LC(R) R  &mt LC(S) S   &mt LC(T) T      &kp G         &kp M        &mt LC(N) N  &kp E        &kp I      &kp O          &kp SEMI
                 &kp LSHFT     &mt LC(Z) Z   &mt LC(X) X  &mt LC(C) C   &kp D            &mt LC(V) V   &kp K        &kp H        &kp COMMA    &kp DOT    &kp FSLH       &kp ENTER
                 &kp LCTRL     &kp LALT      &kp LGUI     &mo FNC       &mo_to LWR MSE  &kp SPACE     &mo RSE      &kp LEFT     &kp DOWN     &kp UP     &kp RIGHT      &td0
