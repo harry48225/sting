@@ -66,7 +66,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN, &inc_dec_kp LS(C_VOL_UP) LS(C_VOL_DN)>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LS(C_VOL_UP) LS(C_VOL_DN)>;
             bindings = <
                 &td0          &td1
                 &kp ESC       &kp Q         &mt LC(W) W  &mt LC(F) F   &kp P            &kp B         &kp J        &mt LC(L) L  &kp U        &kp Y      &kp SQT        &mt LC(BSPC) BSPC  
