@@ -43,7 +43,14 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREV>;
+            bindings = <&kp C_PLAY_PAUSE>, <&kp C_PREV>;
+        };
+        td1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp C_PLAY_PAUSE>, <&kp C_NEXT>;
         };
         mo_to: behavior_mo_to {
             compatible = "zmk,behavior-hold-tap";
@@ -59,9 +66,9 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN, &inc_dec_kp LS(C_VOL_UP) LS(C_VOL_DN)>;
             bindings = <
-                &td0          &td0
+                &td0          &td1
                 &kp ESC       &kp Q         &mt LC(W) W  &mt LC(F) F   &kp P            &kp B         &kp J        &mt LC(L) L  &kp U        &kp Y      &kp SQT        &mt LC(BSPC) BSPC  
                 &kp TAB       &mt LC(A) A   &mt LC(R) R  &mt LC(S) S   &mt LC(T) T      &kp G         &kp M        &mt LC(N) N  &kp E        &kp I      &kp O          &kp SEMI
                 &kp LSHFT     &mt LC(Z) Z   &mt LC(X) X  &mt LC(C) C   &kp D            &mt LC(V) V   &kp K        &kp H        &kp COMMA    &kp DOT    &kp FSLH       &kp ENTER
