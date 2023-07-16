@@ -55,7 +55,7 @@
             bindings = <&mkp MCLK>;
         };
         combo_scroll {
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <15 16>;
             bindings = <&scroll>;
         };
