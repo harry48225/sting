@@ -37,6 +37,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk, combos";
+        combo_lmb {
+            timeout-ms = <50>;
+            key-positions = <18, 19>;
+            bindings = <&mkp LCLK>
+        }
+    }
+
     behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
