@@ -126,7 +126,7 @@
                 &trans      &trans
                 &kp TILDE   &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT   &kp CARET   &kp AMPS    &kp STAR    &kp LPAR    &kp RPAR      &kp DEL
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT     &kp AT
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp LBRC    &kp RBRC    &trans        &NON_US_HASH
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp LBRC    &kp RBRC    &trans        &kp NON_US_HASH
                 &trans      &trans      &trans      &trans      &trans            &trans            &trans      &trans      &kp QMARK   &trans        &trans                    
             >;
         };
