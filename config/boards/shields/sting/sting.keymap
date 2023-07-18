@@ -37,29 +37,31 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-        combo_lmb {
-            timeout-ms = <30>;
-            key-positions = <17 18>;
-            bindings = <&mkp LCLK>;
-        };
-        combo_rmb {
-            timeout-ms = <30>;
-            key-positions = <16 17>;
-            bindings = <&mkp RCLK>;
-        };
-        combo_mmb {
-            timeout-ms = <30>;
-            key-positions = <16 17 18>;
-            bindings = <&mkp MCLK>;
-        };
-        combo_scroll {
-            timeout-ms = <20>;
-            key-positions = <15 16>;
-            bindings = <&scroll>;
-        };
-    };
+    /*
+    * combos {
+    *     compatible = "zmk,combos";
+    *     combo_lmb {
+    *         timeout-ms = <30>;
+    *         key-positions = <17 18>;
+    *         bindings = <&mkp LCLK>;
+    *     };
+    *     combo_rmb {
+    *         timeout-ms = <30>;
+    *         key-positions = <16 17>;
+    *         bindings = <&mkp RCLK>;
+    *     };
+    *     combo_mmb {
+    *         timeout-ms = <30>;
+    *         key-positions = <16 17 18>;
+    *         bindings = <&mkp MCLK>;
+    *     };
+    *     combo_scroll {
+    *         timeout-ms = <20>;
+    *         key-positions = <15 16>;
+    *         bindings = <&scroll>;
+    *     };
+    * };
+    */
 
     behaviors {
         td0: tap_dance_0{
